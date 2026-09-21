@@ -41,10 +41,11 @@ a {
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: -0.03em;
+    color: #000;
 }
 
 .brand span {
-    color: #ff5a36;
+    color: inherit;
 }
 
 .menu {
