@@ -145,6 +145,10 @@ a {
     font-size: 0.8rem;
     font-weight: 900;
     text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .primary-btn {
