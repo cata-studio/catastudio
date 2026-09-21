@@ -164,8 +164,18 @@ a {
 .hero-right {
     position: relative;
     min-height: 560px;
-    background: #f7efe3;
+    background: #f2a9c5;
     overflow: hidden;
+}
+
+.hero-right::after {
+    content: "";
+    position: absolute;
+    inset: 18px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 25px;
+    pointer-events: none;
+    z-index: 4;
 }
 
 .hero-shape {
@@ -174,19 +184,19 @@ a {
 }
 
 .hero-shape.pink {
-    width: 440px;
-    height: 440px;
-    background: #f39cbc;
-    right: 20px;
-    top: 30px;
+    width: 360px;
+    height: 360px;
+    background: #ffd9e7;
+    right: -90px;
+    top: -80px;
 }
 
 .hero-shape.orange {
-    width: 220px;
-    height: 220px;
+    width: 250px;
+    height: 250px;
     background: #ff6a3d;
-    left: 20px;
-    bottom: 10px;
+    left: -70px;
+    bottom: -75px;
 }
 
 .portrait-card {
@@ -196,27 +206,44 @@ a {
     padding: 24px;
 }
 
-.portrait-placeholder {
+.portrait-frame {
     position: absolute;
-    right: 40px;
-    bottom: 0;
-    width: 68%;
-    height: 82%;
-    border-radius: 26px 26px 0 0;
-    background: linear-gradient(180deg, #ffc6ae 0%, #ff9770 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: rgba(80, 45, 30, 0.6);
-    font-size: 0.85rem;
+    inset: 34px 34px 0 74px;
+    border-radius: 48% 48% 0 0 / 30% 30% 0 0;
+    overflow: hidden;
+    box-shadow: 0 30px 70px rgba(87, 40, 36, 0.22);
+    transform: rotate(1.5deg);
+    z-index: 2;
+}
+
+.portrait-frame img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: 50% 34%;
+    transform: scale(1.02);
+}
+
+.portrait-note {
+    position: absolute;
+    top: 52px;
+    left: 28px;
+    z-index: 5;
+    padding: 10px 15px;
+    border-radius: 999px;
+    background: #fff7ef;
+    color: #4d2d23;
+    font-size: 0.66rem;
     font-weight: 900;
-    letter-spacing: 0.12em;
+    letter-spacing: 0.08em;
+    transform: rotate(-8deg);
 }
 
 .mini-badge {
     position: absolute;
-    left: 34px;
-    bottom: 78px;
+    right: 25px;
+    bottom: 30px;
     width: 120px;
     height: 120px;
     border-radius: 50%;
@@ -230,6 +257,9 @@ a {
     font-weight: 900;
     line-height: 1.2;
     color: #6a4b3d;
+    z-index: 5;
+    transform: rotate(7deg);
+    box-shadow: 0 12px 30px rgba(78, 43, 35, 0.16);
 }
 
 /* INTRO */
@@ -594,9 +624,8 @@ a {
         font-size: 4rem;
     }
 
-    .portrait-placeholder {
-        width: 76%;
-        right: 20px;
+    .portrait-frame {
+        inset: 30px 30px 0 64px;
     }
 }
 
@@ -639,5 +668,20 @@ a {
 
     .hero-right {
         min-height: 390px;
+    }
+
+    .portrait-frame {
+        inset: 28px 24px 0 38px;
+        border-radius: 46% 46% 0 0 / 24% 24% 0 0;
+    }
+
+    .portrait-frame img {
+        object-position: 50% 30%;
+    }
+
+    .portrait-note {
+        top: 42px;
+        left: 18px;
+        font-size: 0.58rem;
     }
 }
