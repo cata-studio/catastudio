@@ -397,3 +397,12 @@ body.dogga-page{--red:#75452f;--pink:#d7b2e6;--cream:#faf5ed;--blush:#f2e8f3;--i
 @media(max-width:650px){
   .logo-index .logo-index-card .logo-index-mark{height:170px;max-height:170px}
 }
+
+/* Nuevos logotipos de la galería en blanco y negro. */
+.logo-index-vanity-face,.logo-index-red-lemon{transition:transform .2s,box-shadow .2s}
+.logo-index-vanity-face:hover,.logo-index-red-lemon:hover{transform:translateY(-4px);box-shadow:8px 8px 0 #111}
+.logo-index .logo-index-vanity-face .logo-index-mark,
+.logo-index .logo-index-red-lemon .logo-index-mark,
+.blue-sky-page .blue-sky-logo-stage img[src="assets/vanity-face-logo.png"],
+.blue-sky-page .blue-sky-logo-stage img[src="assets/red-lemon-logo.png"]{filter:none}
+.blue-sky-page .blue-sky-logo-stage img[src="assets/vanity-face-logo.png"]{width:min(100%,700px)}
