@@ -449,3 +449,14 @@ body.dogga-page{--red:#75452f;--pink:#d7b2e6;--cream:#faf5ed;--blush:#f2e8f3;--i
 /* Paroisse Notre-Dame: logo original a color sobre amarillo pastel. */
 .logo-index .logo-index-card.logo-index-paroisse{background:#FFF5A5}
 .logo-index .logo-index-paroisse .logo-index-mark{filter:none}
+
+/* Galería sin botones: cada tarjeta completa sigue enlazada y el logo queda centrado. */
+.logo-index .logo-index-card{grid-template-rows:minmax(0,1fr)}
+/* La Orientadora: invertir los colores del logo y del fondo en la galería. */
+.logo-index .logo-index-card.logo-index-la-orientadora{background:#ca6700}
+.logo-index .logo-index-la-orientadora .orientadora-mark-inverse{
+  background:#fef9db;
+  filter:none;
+  -webkit-mask:url("assets/la-orientadora-logo.png") center / contain no-repeat;
+  mask:url("assets/la-orientadora-logo.png") center / contain no-repeat;
+}
