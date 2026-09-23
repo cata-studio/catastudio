@@ -460,3 +460,15 @@ body.dogga-page{--red:#75452f;--pink:#d7b2e6;--cream:#faf5ed;--blush:#f2e8f3;--i
   -webkit-mask:url("assets/la-orientadora-logo.png") center / contain no-repeat;
   mask:url("assets/la-orientadora-logo.png") center / contain no-repeat;
 }
+
+/* Escala individual de los logos de la galería; object-fit y máscaras mantienen proporciones. */
+.logo-index .logo-index-card.logo-index-vanity-face .logo-index-mark,
+.logo-index .logo-index-card.logo-index-mcc-development .logo-index-mark{height:230px;max-height:230px}
+.logo-index .logo-index-card.logo-index-la-orientadora .logo-index-mark{height:210px;max-height:210px}
+.logo-index .logo-index-card.logo-index-blue-sky .logo-index-mark,
+.logo-index .logo-index-card.logo-index-paroisse .logo-index-mark{
+  width:calc(100% + 20px);
+  max-width:calc(100% + 20px);
+  height:210px;
+  max-height:210px;
+}
