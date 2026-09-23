@@ -299,3 +299,55 @@ body.dogga-page{--red:#75452f;--pink:#d7b2e6;--cream:#faf5ed;--blush:#f2e8f3;--i
 .logo-index-la-recomendadora:hover{transform:translateY(-4px);box-shadow:8px 8px 0 #111}
 .logo-index .logo-index-la-recomendadora .logo-index-mark{width:min(100%,560px);max-height:190px;filter:none}
 .blue-sky-page .blue-sky-logo-stage img[src="assets/la-recomendadora-logo.png"]{filter:none}
+
+/* En la galería, las etiquetas y el enlace tienen su propia franja visual. */
+.logo-index .logo-index-card{
+  display:grid;
+  grid-template-rows:auto minmax(0,1fr) auto;
+  align-items:center;
+  gap:12px;
+  min-height:320px;
+}
+.logo-index .logo-index-number{
+  justify-self:start;
+  align-self:start;
+  display:inline-flex;
+  align-items:center;
+  padding:6px 10px;
+  border-radius:7px;
+  background:var(--red);
+  color:#fff;
+  font-size:.78rem;
+  line-height:1;
+  letter-spacing:.045em;
+}
+.logo-index .logo-index-card .logo-index-mark{
+  justify-self:center;
+  align-self:center;
+  width:auto;
+  max-width:100%;
+  max-height:160px;
+  min-height:0;
+  object-fit:contain;
+}
+.logo-index .logo-index-action{
+  justify-self:end;
+  align-self:end;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:999px;
+  padding:9px 12px;
+  background:var(--red);
+  color:#fff;
+  font-size:.82rem;
+  line-height:1;
+  letter-spacing:.025em;
+}
+.logo-index a.logo-index-card:hover .logo-index-action,
+.logo-index a.logo-index-card:focus-visible .logo-index-action{background:#111}
+.logo-index .logo-index-empty{grid-row:2;justify-self:center}
+@media(max-width:650px){
+  .logo-index .logo-index-card{min-height:280px}
+  .logo-index .logo-index-card .logo-index-mark{max-height:145px}
+}
