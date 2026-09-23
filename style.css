@@ -161,3 +161,5 @@ img,svg{max-width:100%}
 @media(max-width:900px){.dogga-brandbook{grid-template-columns:1fr 1fr}.dogga-brandbook .brandbook-pending{justify-self:start}.dogga-logo-panel{min-height:400px}}
 @media(max-width:700px){.dogga-intro-line{display:block}.dogga-intro-line p{margin-top:25px}.dogga-presentation{grid-template-columns:1fr}.dogga-logo-panel{min-height:360px;gap:40px}.dogga-brandbook{grid-template-columns:1fr}.dogga-intro h1{font-size:clamp(4rem,15vw,7rem)}}
 @media(max-width:360px){.dogga-intro h1{font-size:3.7rem}}
+
+.logo-index-mark{display:block;width:min(78%,390px);height:auto;max-height:170px;object-fit:contain;align-self:center}
