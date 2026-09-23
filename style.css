@@ -295,10 +295,10 @@ body.dogga-page{--red:#75452f;--pink:#d7b2e6;--cream:#faf5ed;--blush:#f2e8f3;--i
 .blue-sky-page .blue-sky-logo-stage img[src="assets/gente-commotus-logo.png"]{filter:none}
 
 /* La Recomendadora: conservar la composición y transparencia del logo original. */
-.logo-index-la-recomendadora{transition:transform .2s,box-shadow .2s}
-.logo-index-la-recomendadora:hover{transform:translateY(-4px);box-shadow:8px 8px 0 #111}
-.logo-index .logo-index-la-recomendadora .logo-index-mark{width:min(100%,560px);max-height:190px;filter:none}
-.blue-sky-page .blue-sky-logo-stage img[src="assets/la-recomendadora-logo.png"]{filter:none}
+.logo-index-la-orientadora{transition:transform .2s,box-shadow .2s}
+.logo-index-la-orientadora:hover{transform:translateY(-4px);box-shadow:8px 8px 0 #111}
+.logo-index .logo-index-la-orientadora .logo-index-mark{width:min(100%,560px);max-height:190px;filter:none}
+.blue-sky-page .blue-sky-logo-stage img[src="assets/la-orientadora-logo.png"]{filter:none}
 
 /* En la galería, las etiquetas y el enlace tienen su propia franja visual. */
 .logo-index .logo-index-card{
@@ -419,3 +419,9 @@ body.dogga-page{--red:#75452f;--pink:#d7b2e6;--cream:#faf5ed;--blush:#f2e8f3;--i
 /* Blue Sky: símbolo azul y letras blancas sobre azul marino liso. */
 .logo-index .logo-index-card.logo-index-blue-sky{background:#0e1929}
 .logo-index .logo-index-blue-sky .logo-index-mark{filter:none}
+
+/* La Orientadora: logo naranja aislado de la ilustración original. */
+.logo-index .logo-index-card.logo-index-la-orientadora{background:#fef9db}
+.logo-index .logo-index-la-orientadora .logo-index-mark{filter:none}
+.blue-sky-page .blue-sky-logo-stage:has(img[src="assets/la-orientadora-logo.png"]){background:#fef9db}
+.blue-sky-page .blue-sky-logo-stage img[src="assets/la-orientadora-logo.png"]{width:min(100%,650px);filter:none}
