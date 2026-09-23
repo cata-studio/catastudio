@@ -496,3 +496,18 @@ body.dogga-page{--red:#75452f;--pink:#d7b2e6;--cream:#faf5ed;--blush:#f2e8f3;--i
 }
 .laud-page .blue-sky-logo-stage{background:#e71924}
 .laud-page .blue-sky-logo-stage img{filter:none}
+
+/* LAUD: fondo crema y lettering rojo, usando la silueta original. */
+.logo-index .logo-index-card.logo-index-laud,
+.laud-page .blue-sky-logo-stage{background:#fff5ef}
+.logo-index .logo-index-laud .laud-mark-red,
+.laud-page .blue-sky-logo-stage .laud-mark-red{
+  background:#e71924;
+  -webkit-mask:url("assets/laud-cream-transparent.png") center / contain no-repeat;
+  mask:url("assets/laud-cream-transparent.png") center / contain no-repeat;
+}
+.laud-page .blue-sky-logo-stage .laud-mark-red{
+  display:block;
+  width:min(100%,920px);
+  aspect-ratio:1215/605;
+}
