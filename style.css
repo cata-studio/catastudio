@@ -257,3 +257,17 @@ body.dogga-page{--red:#75452f;--pink:#d7b2e6;--cream:#faf5ed;--blush:#f2e8f3;--i
 .logo-index .logo-index-card .logo-index-mark{filter:brightness(0)}
 .logo-index .logo-index-pending{opacity:1}
 .logo-index .logo-index-dogga:hover{box-shadow:8px 8px 0 #111}
+
+/* Blue Sky Apartment: logo original mostrado en negro sobre blanco. */
+.logo-index-blue-sky{transition:transform .2s,box-shadow .2s}
+.logo-index-blue-sky:hover{transform:translateY(-4px);box-shadow:8px 8px 0 #111}
+.logo-index .logo-index-blue-sky .logo-index-mark{width:min(100%,560px);max-height:190px;filter:grayscale(1) contrast(650%)}
+.blue-sky-page{--red:#111;--ink:#111;--cream:#fff;--blush:#fff;background:#fff;color:#111}
+.blue-sky-page .site-header,.blue-sky-page footer{background:#fff}
+.blue-sky-hero{padding:clamp(65px,8vw,120px) clamp(20px,7vw,120px) clamp(75px,10vw,140px);background:#fff}
+.blue-sky-hero-inner{max-width:1200px;margin:auto}
+.blue-sky-hero h1{font:900 clamp(3.4rem,8vw,8rem)/.96 Fraunces,Georgia,serif;letter-spacing:-.065em;margin:24px 0 45px}
+.blue-sky-logo-stage{border:2px solid #111;border-radius:22px;padding:clamp(20px,4vw,55px);min-height:clamp(280px,42vw,520px);display:grid;place-items:center;background:#fff}
+.blue-sky-logo-stage img{display:block;width:min(100%,920px);height:auto;filter:grayscale(1) contrast(650%)}
+.blue-sky-caption{display:flex;justify-content:space-between;gap:20px;margin:20px 0 0;font:800 1.2rem "Barlow Condensed",sans-serif;text-transform:uppercase}
+@media(max-width:650px){.blue-sky-hero h1{font-size:clamp(3rem,12vw,5rem)}.blue-sky-caption{flex-direction:column;gap:4px}}
