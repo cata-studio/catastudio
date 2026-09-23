@@ -194,3 +194,11 @@ body.dogga-page{--red:#75452f;--pink:#d7b2e6;--cream:#faf5ed;--blush:#f2e8f3;--i
 .dogga-page .dogga-logo-panel,.dogga-page .dogga-photo-panel{min-height:510px}
 .dogga-page .dogga-logo-brown{width:min(78%,350px);max-width:350px}
 @media(max-width:700px){.dogga-page .dogga-presentation{gap:18px}.dogga-page .dogga-logo-panel{min-height:340px}.dogga-page .dogga-photo-panel{min-height:490px}}
+
+/* DOGGA: la foto completa define el tamaño de su tarjeta, sin fondo alrededor. */
+.dogga-page .dogga-presentation{max-width:1080px;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);align-items:stretch}
+.dogga-page .dogga-photo-panel{position:static;display:flex;flex-direction:column;padding:0;min-height:0;background:#fff}
+.dogga-page .dogga-photo-panel img{position:static;inset:auto;display:block;width:100%;height:auto;max-width:100%;max-height:none;aspect-ratio:1115/1410;object-fit:cover;object-position:center;border-radius:0}
+.dogga-page .dogga-photo-panel figcaption{position:static;inset:auto;display:block;width:100%;padding:18px 25px;background:var(--red);color:var(--cream)}
+.dogga-page .dogga-logo-panel{min-height:0}
+@media(max-width:700px){.dogga-page .dogga-presentation{grid-template-columns:1fr}.dogga-page .dogga-photo-panel{min-height:0}.dogga-page .dogga-photo-panel img{width:100%;height:auto;max-height:none}.dogga-page .dogga-logo-panel{min-height:340px}}
