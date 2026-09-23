@@ -202,3 +202,17 @@ body.dogga-page{--red:#75452f;--pink:#d7b2e6;--cream:#faf5ed;--blush:#f2e8f3;--i
 .dogga-page .dogga-photo-panel figcaption{position:static;inset:auto;display:block;width:100%;padding:18px 25px;background:var(--red);color:var(--cream)}
 .dogga-page .dogga-logo-panel{min-height:0}
 @media(max-width:700px){.dogga-page .dogga-presentation{grid-template-columns:1fr}.dogga-page .dogga-photo-panel{min-height:0}.dogga-page .dogga-photo-panel img{width:100%;height:auto;max-height:none}.dogga-page .dogga-logo-panel{min-height:340px}}
+
+
+/* DOGGA: fotografía de producto en uso. */
+.dogga-lifestyle{padding:clamp(58px,8vw,115px) clamp(20px,7vw,120px) clamp(75px,9vw,130px);background:var(--blush)}
+.dogga-lifestyle-heading{max-width:1250px;margin:0 auto clamp(30px,4vw,58px);display:flex;justify-content:space-between;align-items:end;gap:40px}
+.dogga-lifestyle-heading h2{font:900 clamp(3.2rem,7vw,7.8rem)/.96 Fraunces,Georgia,serif;letter-spacing:-.065em;margin:18px 0 0}
+.dogga-lifestyle-heading h2 em{font-weight:700}
+.dogga-lifestyle-heading>p{max-width:280px;margin:0 0 8px;font-size:1.1rem;line-height:1.45}
+.dogga-lifestyle-grid{max-width:1250px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:clamp(16px,2.5vw,34px);align-items:start}
+.dogga-lifestyle-photo{min-width:0;margin:0}
+.dogga-lifestyle-photo:nth-child(2){margin-top:clamp(35px,7vw,105px)}
+.dogga-lifestyle-photo img{display:block;width:100%;height:auto;border-radius:18px;box-shadow:0 14px 35px rgba(75,53,45,.12)}
+.dogga-lifestyle-photo figcaption{display:flex;justify-content:space-between;gap:15px;padding:17px 2px 0;border-top:1px solid var(--red);margin-top:20px;font:700 1rem "Barlow Condensed",sans-serif;text-transform:uppercase;letter-spacing:.04em}
+@media(max-width:700px){.dogga-lifestyle-heading{display:block}.dogga-lifestyle-heading>p{margin:25px 0 0}.dogga-lifestyle-grid{grid-template-columns:1fr;gap:38px}.dogga-lifestyle-photo:nth-child(2){margin-top:0}.dogga-lifestyle-photo figcaption{font-size:.9rem}}
