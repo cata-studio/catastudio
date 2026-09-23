@@ -8,9 +8,16 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=DM+Sans:wght@400;500;600;700&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=8">
+  <link rel="stylesheet" href="style.css?v=9">
 </head>
 <body>
+  <svg class="logo-filter" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+    <filter id="red-logo" color-interpolation-filters="sRGB">
+      <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 1  0 0 0 0 0  0 0 0 0 .275  -.2126 -.7152 -.0722 0 1" result="color"/>
+      <feComponentTransfer in="color" result="contrast"><feFuncA type="linear" slope="3" intercept="-.15"/></feComponentTransfer>
+      <feComposite in="contrast" in2="SourceAlpha" operator="in"/>
+    </filter>
+  </svg>
   <header class="site-header" id="inicio">
     <a class="wordmark" href="#inicio" aria-label="Ana Catarina von Papen, inicio">Ana Catarina<br><span>von</span> <span>Papen</span></a>
     <nav aria-label="Navegación principal">
@@ -64,9 +71,9 @@
     <section class="experience" id="experiencia" aria-labelledby="experience-title">
       <div class="experience-heading"><p class="eyebrow">04 / Trayectoria</p><h2 id="experience-title">Experiencia<span aria-hidden="true">✳</span></h2></div>
       <div class="experience-list">
-        <article class="experience-card"><div class="experience-meta"><span>2020 — Actualidad</span><h3>ART Computer</h3><p>Diseñadora gráfica y web</p></div><p>Diseño de piezas gráficas y contenido digital para web, e-commerce y campañas comerciales. Gestión y actualización de contenidos en Magento, creación de materiales para redes sociales y apoyo en diseño UX/UI, branding y comunicación visual.</p></article>
-        <article class="experience-card"><div class="experience-meta"><span>2019 — 2020</span><h3>Crowdland</h3><p>Social Media Manager y Diseño</p></div><p>Gestión de redes sociales para diferentes clientes, incluyendo IE University y marcas del sector gastronómico. Creación y planificación de contenido, diseño de piezas gráficas y diseño de páginas web.</p></article>
-        <article class="experience-card"><div class="experience-meta"><span>2018 — 2019</span><h3>SMARKT</h3><p>Social Media Manager y Diseño</p></div><p>Gestión de contenido para cinco cuentas de redes sociales, creando piezas gráficas y contenido visual adaptado a cada marca. Planificación de publicaciones, fotografía de producto y edición y retoque de imágenes.</p></article>
+        <article class="experience-card"><div class="experience-meta"><span>2020 — Actualidad</span><h3>ART Computer</h3><p>Diseñadora gráfica y web</p><img class="employer-logo art-logo" src="assets/logo-art-computer.png" alt="Logotipo de ART Computer" loading="lazy"></div><p>Diseño de piezas gráficas y contenido digital para web, e-commerce y campañas comerciales. Gestión y actualización de contenidos en Magento, creación de materiales para redes sociales y apoyo en diseño UX/UI, branding y comunicación visual.</p></article>
+        <article class="experience-card"><div class="experience-meta"><span>2019 — 2020</span><h3>Crowdland</h3><p>Social Media Manager y Diseño</p><img class="employer-logo crowdland-logo" src="assets/logo-crowdland.png" alt="Logotipo de Crowdland" loading="lazy"></div><p>Gestión de redes sociales para diferentes clientes, incluyendo IE University y marcas del sector gastronómico. Creación y planificación de contenido, diseño de piezas gráficas y diseño de páginas web.</p></article>
+        <article class="experience-card"><div class="experience-meta"><span>2018 — 2019</span><h3>SMARKT</h3><p>Social Media Manager y Diseño</p><img class="employer-logo smarkt-logo" src="assets/logo-smarkt.png" alt="Logotipo de SMARKT" loading="lazy"></div><p>Gestión de contenido para cinco cuentas de redes sociales, creando piezas gráficas y contenido visual adaptado a cada marca. Planificación de publicaciones, fotografía de producto y edición y retoque de imágenes.</p></article>
       </div>
     </section>
   </main>
