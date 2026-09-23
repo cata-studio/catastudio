@@ -406,3 +406,12 @@ body.dogga-page{--red:#75452f;--pink:#d7b2e6;--cream:#faf5ed;--blush:#f2e8f3;--i
 .blue-sky-page .blue-sky-logo-stage img[src="assets/vanity-face-logo.png"],
 .blue-sky-page .blue-sky-logo-stage img[src="assets/red-lemon-logo.png"]{filter:none}
 .blue-sky-page .blue-sky-logo-stage img[src="assets/vanity-face-logo.png"]{width:min(100%,700px)}
+
+/* DOGGA: verdes tomados de la referencia de marca enviada. */
+.logo-index .logo-index-card.logo-index-dogga{background:#d7e5d1}
+.logo-index .logo-index-dogga .dogga-mark-color{
+  background:#709b61;
+  filter:none;
+  -webkit-mask:url("assets/dogga-logo.png") center / contain no-repeat;
+  mask:url("assets/dogga-logo.png") center / contain no-repeat;
+}
