@@ -484,3 +484,15 @@ body.dogga-page{--red:#75452f;--pink:#d7b2e6;--cream:#faf5ed;--blush:#f2e8f3;--i
   max-height:275px;
 }
 .logo-index .logo-index-card.logo-index-mcc-development .logo-index-mark{height:270px;max-height:270px}
+
+/* LAUD: lettering de la referencia con sus colores intercambiados. */
+.logo-index .logo-index-card.logo-index-laud{background:#e71924}
+.logo-index .logo-index-laud .logo-index-mark{
+  width:calc(100% + 16px);
+  max-width:calc(100% + 16px);
+  height:210px;
+  max-height:210px;
+  filter:none;
+}
+.laud-page .blue-sky-logo-stage{background:#e71924}
+.laud-page .blue-sky-logo-stage img{filter:none}
