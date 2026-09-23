@@ -434,3 +434,7 @@ body.dogga-page{--red:#75452f;--pink:#d7b2e6;--cream:#faf5ed;--blush:#f2e8f3;--i
   -webkit-mask:url("assets/eleusis-logo.png") center / contain no-repeat;
   mask:url("assets/eleusis-logo.png") center / contain no-repeat;
 }
+
+/* MCC Development: blanco sobre azul de la referencia. */
+.logo-index .logo-index-card.logo-index-mcc-development{background:#3478f6}
+.logo-index .logo-index-mcc-development .logo-index-mark{filter:none}
