@@ -230,3 +230,24 @@ body.dogga-page{--red:#75452f;--pink:#d7b2e6;--cream:#faf5ed;--blush:#f2e8f3;--i
 .dogga-product-photo img{display:block;width:100%;height:auto;object-fit:contain}
 .dogga-product-photo figcaption{padding:18px 28px;background:var(--red);color:var(--cream);font:800 1.15rem "Barlow Condensed",sans-serif;text-transform:uppercase;letter-spacing:.04em}
 @media(max-width:700px){.dogga-identity-stage{min-height:300px}.dogga-page .dogga-identity .dogga-logo-brown{width:80%}.dogga-product-photo{margin-top:24px}}
+
+
+/* Navegación visible en todas las áreas del portfolio. */
+.category{cursor:pointer}
+.category p{display:flex;align-items:end;justify-content:space-between;gap:15px;flex-wrap:wrap}
+.category-action{display:inline-flex;align-items:center;justify-content:center;padding:9px 15px;border:1.5px solid currentColor;border-radius:100px;font:800 1rem "Barlow Condensed",sans-serif;white-space:nowrap;transition:background .2s,color .2s}
+.category:hover .category-action,.category:focus-visible .category-action{background:var(--red);color:var(--cream)}
+@media(max-width:650px){.category-action{font-size:.95rem}}
+/* Páginas de categorías aún sin una galería de proyectos. */
+.portfolio-subpage{background:var(--cream)}
+.portfolio-hero{padding:clamp(65px,9vw,125px) clamp(20px,7vw,120px);background:var(--pink)}
+.portfolio-subpage[data-accent="blue"] .portfolio-hero{background:var(--blue)}
+.portfolio-subpage[data-accent="peach"] .portfolio-hero{background:#ffeddb}
+.portfolio-hero h1{font:900 clamp(3.8rem,10vw,10rem)/.95 Fraunces,Georgia,serif;letter-spacing:-.07em;margin:35px 0 40px;max-width:1300px;overflow-wrap:anywhere}
+.portfolio-hero p:last-child{font-size:clamp(1.2rem,2.1vw,1.8rem);line-height:1.4;max-width:680px;margin:0}
+.portfolio-content{padding:clamp(65px,8vw,120px) clamp(20px,7vw,120px);min-height:400px}
+.portfolio-content-inner{max-width:1100px;margin:auto;border-top:2px solid var(--red);display:grid;grid-template-columns:1fr 1fr;gap:35px;padding-top:28px}
+.portfolio-content h2{font:900 clamp(2.8rem,5vw,5rem)/1 Fraunces,Georgia,serif;letter-spacing:-.06em;margin:16px 0}
+.portfolio-content p{font-size:1.15rem;line-height:1.5;max-width:460px}
+.portfolio-content .text-link{display:inline-block;margin-top:16px}
+@media(max-width:700px){.portfolio-content-inner{grid-template-columns:1fr;gap:12px}.portfolio-hero h1{font-size:clamp(3.2rem,12vw,6rem)}}
