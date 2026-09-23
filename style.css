@@ -511,3 +511,22 @@ body.dogga-page{--red:#75452f;--pink:#d7b2e6;--cream:#faf5ed;--blush:#f2e8f3;--i
   width:min(100%,920px);
   aspect-ratio:1215/605;
 }
+
+/* LAUD: turquesa, coral y rojo de la referencia, solo el lettering. */
+.logo-index .logo-index-card.logo-index-laud,
+.laud-page .blue-sky-logo-stage{background:#59ddc5}
+.logo-index .logo-index-laud .laud-mark-color,
+.laud-page .blue-sky-logo-stage .laud-mark-color{position:relative;background:none;filter:none}
+.laud-page .blue-sky-logo-stage .laud-mark-color{display:block;width:min(100%,920px);aspect-ratio:1215/605}
+.logo-index .laud-mark-color::before,
+.logo-index .laud-mark-color::after,
+.laud-page .laud-mark-color::before,
+.laud-page .laud-mark-color::after{
+  content:"";position:absolute;inset:0;
+  -webkit-mask:url("assets/laud-cream-transparent.png") center / contain no-repeat;
+  mask:url("assets/laud-cream-transparent.png") center / contain no-repeat;
+}
+.logo-index .laud-mark-color::before,
+.laud-page .laud-mark-color::before{background:#ff4032;transform:translate(2px,2px) scale(1.018)}
+.logo-index .laud-mark-color::after,
+.laud-page .laud-mark-color::after{background:#ff9883}
