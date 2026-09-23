@@ -472,3 +472,15 @@ body.dogga-page{--red:#75452f;--pink:#d7b2e6;--cream:#faf5ed;--blush:#f2e8f3;--i
   height:210px;
   max-height:210px;
 }
+
+/* DOGGA: rosa y coral de la referencia enviada. */
+.logo-index .logo-index-card.logo-index-dogga{background:#f5c3d2}
+.logo-index .logo-index-dogga .dogga-mark-color{background:#ff5640}
+/* Vanity Face y MCC ganan presencia manteniendo sus proporciones. */
+.logo-index .logo-index-card.logo-index-vanity-face .logo-index-mark{
+  width:calc(100% + 20px);
+  max-width:calc(100% + 20px);
+  height:275px;
+  max-height:275px;
+}
+.logo-index .logo-index-card.logo-index-mcc-development .logo-index-mark{height:270px;max-height:270px}
