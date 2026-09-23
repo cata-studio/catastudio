@@ -22,4 +22,4 @@
 .experience-card .employer-logo-link{position:absolute;right:clamp(26px,4vw,55px);bottom:clamp(24px,3vw,42px);margin:0}
 .experience-card .employer-logo-link .employer-logo{position:static;margin:0}
 /* El rojo del logo ART es plano, sin variaciones de brillo del original. */
-.experience-card .art-logo{filter:brightness(0) url(#red-logo)}
+.experience-card .art-logo{max-width:min(235px,60vw);max-height:56px;filter:brightness(0) url(#red-logo)}
