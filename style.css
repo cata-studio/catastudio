@@ -163,3 +163,12 @@ img,svg{max-width:100%}
 @media(max-width:360px){.dogga-intro h1{font-size:3.7rem}}
 
 .logo-index-mark{display:block;width:min(78%,390px);height:auto;max-height:170px;object-fit:contain;align-self:center}
+
+/* Paleta DOGGA: lavanda y marrón de los accesorios. */
+body.dogga-page{--red:#75452f;--pink:#d7b2e6;--cream:#faf5ed;--blush:#f2e8f3;--ink:#4b352d;background:var(--cream);color:var(--red)}
+.dogga-page .site-header,.dogga-page footer{background:var(--blush)}
+.dogga-page .dogga-intro{background:var(--pink)}
+.dogga-page .dogga-logo-panel{background:var(--cream)}
+.dogga-page .dogga-photo-panel{background:var(--blush)}
+.dogga-page .dogga-brandbook{background:var(--red);color:var(--cream)}
+.dogga-logo-brown{width:100%;max-width:740px;aspect-ratio:2048/789;align-self:center;background:var(--red);-webkit-mask:url("assets/dogga-logo.png") center / contain no-repeat;mask:url("assets/dogga-logo.png") center / contain no-repeat}
