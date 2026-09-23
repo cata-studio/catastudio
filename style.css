@@ -284,3 +284,6 @@ body.dogga-page{--red:#75452f;--pink:#d7b2e6;--cream:#faf5ed;--blush:#f2e8f3;--i
 .logo-index .logo-index-number,.logo-index .logo-index-action{font-size:1rem}
 @media(max-width:1050px){.logo-index-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:650px){.logo-index-grid{grid-template-columns:1fr}.logo-index .logo-index-card{min-height:245px}}
+
+/* La versión de alta resolución mantiene su transparencia y bordes originales. */
+.blue-sky-page .blue-sky-logo-stage img[src^="assets/logo-paroisse-notre-dame.png"]{filter:none}
