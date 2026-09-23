@@ -287,3 +287,9 @@ body.dogga-page{--red:#75452f;--pink:#d7b2e6;--cream:#faf5ed;--blush:#f2e8f3;--i
 
 /* La versión de alta resolución mantiene su transparencia y bordes originales. */
 .blue-sky-page .blue-sky-logo-stage img[src^="assets/logo-paroisse-notre-dame.png"]{filter:none}
+
+/* Gente Commotus: conservar la imagen original y su transparencia. */
+.logo-index-gente-commotus{transition:transform .2s,box-shadow .2s}
+.logo-index-gente-commotus:hover{transform:translateY(-4px);box-shadow:8px 8px 0 #111}
+.logo-index .logo-index-gente-commotus .logo-index-mark{width:min(100%,560px);max-height:190px;filter:none}
+.blue-sky-page .blue-sky-logo-stage img[src="assets/gente-commotus-logo.png"]{filter:none}
