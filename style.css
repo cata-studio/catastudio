@@ -216,3 +216,17 @@ body.dogga-page{--red:#75452f;--pink:#d7b2e6;--cream:#faf5ed;--blush:#f2e8f3;--i
 .dogga-lifestyle-photo img{display:block;width:100%;height:auto;border-radius:18px;box-shadow:0 14px 35px rgba(75,53,45,.12)}
 .dogga-lifestyle-photo figcaption{display:flex;justify-content:space-between;gap:15px;padding:17px 2px 0;border-top:1px solid var(--red);margin-top:20px;font:700 1rem "Barlow Condensed",sans-serif;text-transform:uppercase;letter-spacing:.04em}
 @media(max-width:700px){.dogga-lifestyle-heading{display:block}.dogga-lifestyle-heading>p{margin:25px 0 0}.dogga-lifestyle-grid{grid-template-columns:1fr;gap:38px}.dogga-lifestyle-photo:nth-child(2){margin-top:0}.dogga-lifestyle-photo figcaption{font-size:.9rem}}
+
+
+/* DOGGA: el logotipo y la aplicación de marca ocupan secciones independientes. */
+.dogga-identity,.dogga-product{padding:clamp(56px,7vw,100px) clamp(20px,7vw,120px)}
+.dogga-identity{background:var(--cream)}
+.dogga-product{background:var(--blush)}
+.dogga-section-inner{max-width:1120px;margin:0 auto}
+.dogga-identity-stage{min-height:clamp(340px,45vw,530px);display:flex;align-items:center;justify-content:center;margin:26px 0 18px;border:2px solid var(--red);border-radius:22px;background:var(--cream)}
+.dogga-page .dogga-identity .dogga-logo-brown{width:min(72%,600px);max-width:600px;margin:0;flex:none}
+.dogga-identity-foot{margin:0;font:800 1.15rem "Barlow Condensed",sans-serif;text-transform:uppercase;letter-spacing:.04em}
+.dogga-product-photo{max-width:760px;margin:32px auto 0;border:2px solid var(--red);border-radius:22px;overflow:hidden;background:white}
+.dogga-product-photo img{display:block;width:100%;height:auto;object-fit:contain}
+.dogga-product-photo figcaption{padding:18px 28px;background:var(--red);color:var(--cream);font:800 1.15rem "Barlow Condensed",sans-serif;text-transform:uppercase;letter-spacing:.04em}
+@media(max-width:700px){.dogga-identity-stage{min-height:300px}.dogga-page .dogga-identity .dogga-logo-brown{width:80%}.dogga-product-photo{margin-top:24px}}
