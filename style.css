@@ -27,14 +27,3 @@
 /* ART Education: estudio de caso compacto sin capturas. */
 .case-hero{min-height:460px;padding-top:clamp(55px,7vw,100px)}
 .case-section{min-height:0;padding-top:clamp(50px,6vw,85px);padding-bottom:clamp(50px,6vw,85px)}
-.education-project{background:var(--cream);padding:0 clamp(20px,7vw,120px) clamp(65px,7vw,100px)}
-.education-project-head{border-top:2px solid var(--red);padding:clamp(35px,4vw,60px) 0;display:grid;grid-template-columns:1.25fr .75fr;align-items:end;gap:30px}
-.education-project-head h3{font-family:Fraunces,Georgia,serif;font-size:clamp(3.5rem,7vw,7.5rem);line-height:.95;letter-spacing:-.075em;margin:18px 0 0}.education-project-head h3 span{font-size:.27em;vertical-align:top;letter-spacing:0}
-.education-project-head>p{font-size:clamp(1.05rem,1.7vw,1.35rem);line-height:1.45;margin:0;max-width:480px}
-.education-project-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
-.education-panel{min-height:280px;padding:clamp(25px,3vw,42px);border:2px solid var(--red);border-radius:22px;display:flex;flex-direction:column;background:var(--blush)}
-.education-panel:nth-child(2){background:var(--blue)}.education-panel:nth-child(3){background:var(--pink)}.education-panel:nth-child(4){background:#ffeddb}
-.education-panel>span{font:800 1.15rem "Barlow Condensed",sans-serif;text-transform:uppercase;letter-spacing:.03em}
-.education-panel h4{font-family:Fraunces,Georgia,serif;font-weight:900;letter-spacing:-.055em;line-height:1.05;font-size:clamp(2rem,3vw,3.5rem);margin:30px 0 15px}
-.education-panel p{font-size:1.05rem;line-height:1.45;margin:auto 0 0;max-width:550px;color:var(--ink)}
-@media(max-width:700px){.education-project-head{grid-template-columns:1fr;gap:18px}.education-project-grid{grid-template-columns:1fr}.education-panel{min-height:235px}.case-hero{min-height:390px}}
