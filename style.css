@@ -360,3 +360,40 @@ body.dogga-page{--red:#75452f;--pink:#d7b2e6;--cream:#faf5ed;--blush:#f2e8f3;--i
 /* MCC: el fondo gris claro de la captura se ve blanco mediante CSS. */
 .logo-index .logo-index-mcc-development .logo-index-mark,
 .blue-sky-page .blue-sky-logo-stage img[src="assets/mcc-development-logo.png"]{filter:grayscale(1) contrast(1000%)}
+
+/* Tarjetas uniformes: imagen centrada y llamada a la acción fija en la esquina inferior. */
+.logo-index .logo-index-card{
+  grid-template-columns:minmax(0,1fr);
+  grid-template-rows:minmax(0,1fr) auto;
+  justify-items:center;
+  align-items:center;
+  gap:12px;
+  min-height:320px;
+}
+.logo-index .logo-index-card .logo-index-mark{
+  grid-column:1;
+  grid-row:1;
+  display:block;
+  width:100%;
+  height:190px;
+  max-width:100%;
+  max-height:190px;
+  justify-self:center;
+  align-self:center;
+  object-fit:contain;
+}
+.logo-index .logo-index-card .logo-index-action{
+  grid-column:1;
+  grid-row:2;
+  justify-self:end;
+  align-self:end;
+}
+.logo-index .logo-index-card .logo-index-empty{
+  grid-column:1;
+  grid-row:1;
+  justify-self:center;
+  align-self:center;
+}
+@media(max-width:650px){
+  .logo-index .logo-index-card .logo-index-mark{height:170px;max-height:170px}
+}
