@@ -24,15 +24,17 @@
 /* El rojo del logo ART es plano, sin variaciones de brillo del original. */
 .experience-card .art-logo{max-width:min(235px,60vw);max-height:56px;filter:brightness(0) url(#red-logo)}
 
-.web-showcase{padding:clamp(35px,5vw,80px) clamp(20px,7vw,120px) clamp(70px,9vw,130px);background:var(--cream)}
-.web-showcase-intro{max-width:720px;margin-bottom:38px}.web-showcase-intro h3{font-family:Fraunces,Georgia,serif;font-weight:900;letter-spacing:-.06em;line-height:1;font-size:clamp(2.7rem,6vw,6rem);margin:18px 0}.web-showcase-intro>p:last-child{font-size:clamp(1.05rem,1.7vw,1.4rem);line-height:1.45;margin:0}
-.web-showcase-layout{display:grid;grid-template-columns:minmax(0,3fr) minmax(180px,1fr);gap:clamp(12px,2.5vw,32px);align-items:start}.web-preview{border:2px solid var(--red);border-radius:18px;overflow:hidden;background:var(--blush);box-shadow:10px 10px 0 var(--pink)}.preview-bar{height:44px;border-bottom:2px solid var(--red);display:flex;align-items:center;justify-content:space-between;gap:10px;padding:0 18px;font-family:"Barlow Condensed",sans-serif;font-size:1rem;font-weight:800;text-transform:uppercase}.preview-scroll{height:clamp(340px,42vw,560px);overflow-y:auto;overscroll-behavior:contain;scrollbar-color:var(--red) var(--blush)}.preview-placeholder{display:grid;place-items:center;text-align:center;padding:25px;border-bottom:2px solid var(--red);font-family:"Barlow Condensed",sans-serif;font-weight:800;text-transform:uppercase;font-size:clamp(1.25rem,2.5vw,2.6rem)}.preview-first{height:390px;background:var(--pink)}.preview-second{height:350px;background:var(--blue)}.preview-third{height:290px;background:#ffeddb}.preview-mobile-shot{height:850px;background:var(--pink)}.web-showcase-note{font-size:.95rem;font-weight:600;margin:27px 0 0}
-@media(max-width:650px){.web-showcase-layout{grid-template-columns:minmax(0,1.6fr) minmax(0,1fr)}.preview-bar{font-size:.82rem;padding:0 9px}.web-preview-desktop .preview-bar span:first-child{display:none}.preview-scroll{height:340px}.preview-placeholder{font-size:1rem;padding:10px}.preview-first{height:260px}.preview-second{height:240px}.preview-third{height:210px}.preview-mobile-shot{height:610px}}
-
-/* Capturas reales del proyecto web, en una única ventana continua. */
-.web-showcase-real .web-showcase-intro{max-width:850px}
-.web-showcase-real .web-preview{max-width:1200px;margin-inline:auto;box-shadow:14px 14px 0 var(--pink)}
-.web-showcase-real .preview-scroll{height:clamp(470px,55vw,720px);background:#fff;scroll-behavior:smooth}
-.web-showcase-real .preview-scroll img{display:block;width:100%;height:auto;margin:0;border:0}
-.web-showcase-real .web-showcase-note{max-width:1200px;margin:29px auto 0}
-@media(max-width:650px){.web-showcase-real .preview-scroll{height:470px}.web-showcase-real .preview-bar{font-size:.82rem}.web-showcase-real .web-preview{box-shadow:7px 7px 0 var(--pink)}}
+/* ART Education: estudio de caso compacto sin capturas. */
+.case-hero{min-height:460px;padding-top:clamp(55px,7vw,100px)}
+.case-section{min-height:0;padding-top:clamp(50px,6vw,85px);padding-bottom:clamp(50px,6vw,85px)}
+.education-project{background:var(--cream);padding:0 clamp(20px,7vw,120px) clamp(65px,7vw,100px)}
+.education-project-head{border-top:2px solid var(--red);padding:clamp(35px,4vw,60px) 0;display:grid;grid-template-columns:1.25fr .75fr;align-items:end;gap:30px}
+.education-project-head h3{font-family:Fraunces,Georgia,serif;font-size:clamp(3.5rem,7vw,7.5rem);line-height:.95;letter-spacing:-.075em;margin:18px 0 0}.education-project-head h3 span{font-size:.27em;vertical-align:top;letter-spacing:0}
+.education-project-head>p{font-size:clamp(1.05rem,1.7vw,1.35rem);line-height:1.45;margin:0;max-width:480px}
+.education-project-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.education-panel{min-height:280px;padding:clamp(25px,3vw,42px);border:2px solid var(--red);border-radius:22px;display:flex;flex-direction:column;background:var(--blush)}
+.education-panel:nth-child(2){background:var(--blue)}.education-panel:nth-child(3){background:var(--pink)}.education-panel:nth-child(4){background:#ffeddb}
+.education-panel>span{font:800 1.15rem "Barlow Condensed",sans-serif;text-transform:uppercase;letter-spacing:.03em}
+.education-panel h4{font-family:Fraunces,Georgia,serif;font-weight:900;letter-spacing:-.055em;line-height:1.05;font-size:clamp(2rem,3vw,3.5rem);margin:30px 0 15px}
+.education-panel p{font-size:1.05rem;line-height:1.45;margin:auto 0 0;max-width:550px;color:var(--ink)}
+@media(max-width:700px){.education-project-head{grid-template-columns:1fr;gap:18px}.education-project-grid{grid-template-columns:1fr}.education-panel{min-height:235px}.case-hero{min-height:390px}}
