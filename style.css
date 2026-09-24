@@ -570,3 +570,6 @@ body.dogga-page{--red:#75452f;--pink:#d7b2e6;--cream:#faf5ed;--blush:#f2e8f3;--i
 @keyframes preview-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
 @media(max-width:650px){.category-logos,.category-with-preview{min-height:360px}.category-preview{height:120px;margin:5px 0 15px}.category-preview .preview-tile{height:115px}}
 @media(prefers-reduced-motion:reduce){.category-preview .preview-tile,.preview-logo{transition:none}.category-logo-preview img,.category-preview img{animation:none}}
+
+/* Dibujado como vector: evita que iOS sustituya la estrella por un emoji. */
+.illustrated-spark{display:inline-block;width:1em;height:1em;vertical-align:top;background-color:currentColor;-webkit-mask:url('assets/spark-illustrated.svg') center/contain no-repeat;mask:url('assets/spark-illustrated.svg') center/contain no-repeat;letter-spacing:0;flex:none}
