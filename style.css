@@ -549,7 +549,7 @@ body.dogga-page{--red:#75452f;--pink:#d7b2e6;--cream:#faf5ed;--blush:#f2e8f3;--i
 .laud-page .blue-sky-logo-stage img{display:block;width:min(100%,920px);height:auto;filter:none}
 
 /* Art Vibes: imagen original recortada, sin deformación ni filtros. */
-.logo-index .logo-index-card.logo-index-art-vibes{background:#ecd9b8}
-.logo-index .logo-index-card.logo-index-art-vibes .logo-index-mark{height:255px;max-height:255px;width:auto;max-width:100%;filter:none;object-fit:contain;mix-blend-mode:multiply}
-.art-vibes-page .blue-sky-logo-stage{background:#ecd9b8;border:0}
-.art-vibes-page .blue-sky-logo-stage img{width:min(100%,650px);max-height:85vh;object-fit:contain;filter:none;mix-blend-mode:multiply}
+.logo-index .logo-index-card.logo-index-art-vibes{background:#fff}
+.logo-index .logo-index-card.logo-index-art-vibes .logo-index-mark{height:255px;max-height:255px;width:auto;max-width:100%;filter:none;object-fit:contain}
+.art-vibes-page .blue-sky-logo-stage{background:#fff;border:0}
+.art-vibes-page .blue-sky-logo-stage img{width:min(100%,650px);max-height:85vh;object-fit:contain;filter:none}
