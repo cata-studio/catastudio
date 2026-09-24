@@ -573,3 +573,11 @@ body.dogga-page{--red:#75452f;--pink:#d7b2e6;--cream:#faf5ed;--blush:#f2e8f3;--i
 
 /* Dibujado como vector: evita que iOS sustituya la estrella por un emoji. */
 .illustrated-spark{display:inline-block;width:1em;height:1em;vertical-align:top;background-color:currentColor;-webkit-mask:url('assets/spark-illustrated.svg') center/contain no-repeat;mask:url('assets/spark-illustrated.svg') center/contain no-repeat;letter-spacing:0;flex:none}
+
+/* Arrows are artwork, never platform emoji glyphs. */
+.illustrated-arrow{display:inline-block;width:1em;height:1em;vertical-align:-.13em;margin-left:.22em;background:currentColor;-webkit-mask:url('assets/arrow-illustrated.svg') center/contain no-repeat;mask:url('assets/arrow-illustrated.svg') center/contain no-repeat;transform-origin:center;flex:none}
+.arrow-left{transform:rotate(-135deg);margin-left:0;margin-right:.22em}
+.arrow-up{transform:rotate(-45deg)}
+.arrow-down{transform:rotate(135deg)}
+.round-link .illustrated-arrow{width:.85em;height:.85em;margin:0}
+.category-action .illustrated-arrow{width:1.1em;height:1.1em;margin-left:.35em}
