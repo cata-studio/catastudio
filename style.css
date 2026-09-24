@@ -534,3 +534,16 @@ body.dogga-page{--red:#75452f;--pink:#d7b2e6;--cream:#faf5ed;--blush:#f2e8f3;--i
 /* Galería de logotipos sin contornos negros. */
 .logo-index .logo-index-card{border:0}
 .logo-index .logo-index-card:hover{box-shadow:none}
+
+/* LAUD: imagen original, conservando las estrellas y Swimwear; solo se retira la tortuga. */
+.logo-index .logo-index-card.logo-index-laud,
+.laud-page .blue-sky-logo-stage{background:#59ddc5}
+.logo-index .logo-index-card.logo-index-laud .logo-index-mark{
+  width:calc(100% + 16px);
+  max-width:calc(100% + 16px);
+  height:215px;
+  max-height:215px;
+  filter:none;
+  object-fit:contain;
+}
+.laud-page .blue-sky-logo-stage img{display:block;width:min(100%,920px);height:auto;filter:none}
