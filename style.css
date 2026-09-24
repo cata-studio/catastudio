@@ -581,3 +581,11 @@ body.dogga-page{--red:#75452f;--pink:#d7b2e6;--cream:#faf5ed;--blush:#f2e8f3;--i
 .arrow-down{transform:rotate(135deg)}
 .round-link .illustrated-arrow{width:.85em;height:.85em;margin:0}
 .category-action .illustrated-arrow{width:1.1em;height:1.1em;margin-left:.35em}
+
+/* La portada y la galería usan las mismas tarjetas de marca. */
+.category-logos .preview-red-lemon{background:#620000}
+.category-logos .preview-dogga{background:#d7e5d1}
+.category-logos .preview-dogga-mark{display:block;width:100%;height:100%;background:#709b61;-webkit-mask:url("assets/dogga-logo.png") center/contain no-repeat;mask:url("assets/dogga-logo.png") center/contain no-repeat;animation:preview-float 4s ease-in-out -2s infinite}
+.logo-index .logo-index-card.logo-index-dogga{background:#d7e5d1}
+.logo-index .logo-index-dogga .dogga-mark-color{background:#709b61}
+@media(prefers-reduced-motion:reduce){.category-logos .preview-dogga-mark{animation:none}}
