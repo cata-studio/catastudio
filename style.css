@@ -589,3 +589,29 @@ body.dogga-page{--red:#75452f;--pink:#d7b2e6;--cream:#faf5ed;--blush:#f2e8f3;--i
 .logo-index .logo-index-card.logo-index-dogga{background:#d7e5d1}
 .logo-index .logo-index-dogga .dogga-mark-color{background:#709b61}
 @media(prefers-reduced-motion:reduce){.category-logos .preview-dogga-mark{animation:none}}
+
+/* Galería de dibujos: composición editorial con obra completa al abrir. */
+.drawings-intro{background:var(--pink);padding:clamp(52px,7vw,100px) clamp(20px,7vw,120px) 28px}
+.drawings-intro h1{font-family:Fraunces,Georgia,serif;font-size:clamp(4.2rem,12vw,12rem);font-weight:900;letter-spacing:-.075em;line-height:1;margin:30px 0 50px;text-transform:uppercase}
+.drawings-intro h1 .illustrated-spark{font-size:.22em;margin-left:.08em}
+.drawings-intro-bottom{border-top:2px solid currentColor;padding-top:20px;display:flex;justify-content:space-between;align-items:center;gap:20px;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.35rem;text-transform:uppercase}
+.drawings-intro-bottom p{margin:0}
+.drawings-gallery{background:var(--cream);display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:clamp(18px,3vw,46px);padding:clamp(35px,5vw,80px) clamp(20px,5vw,80px) clamp(80px,9vw,140px);align-items:start}
+.drawing{grid-column:span 6;margin:0;min-width:0}.drawing-feature{grid-column:span 7}.drawing-feature+.drawing{grid-column:span 5;margin-top:12%}.drawing-wide{grid-column:span 7}.drawing-wide+.drawing{grid-column:span 5;margin-top:15%}
+.drawing:nth-child(3),.drawing:nth-child(7),.drawing:nth-child(9){margin-top:10%}
+.drawing-open{display:block;width:100%;padding:clamp(15px,2.5vw,34px);border:0;border-radius:20px;background:#f9e6e0;cursor:zoom-in;overflow:hidden;transition:transform .3s ease,box-shadow .3s ease}
+.drawing-feature .drawing-open{background:#e8759e}.drawing-dark .drawing-open{background:#56232b}.drawing-blue .drawing-open{background:#cceaf0}.drawing-wide .drawing-open{background:#cdd9cc}
+.drawing-open:hover,.drawing-open:focus-visible{transform:translateY(-6px);box-shadow:0 20px 36px #572e3325}
+.drawing-open img{display:block;width:100%;height:clamp(300px,48vw,760px);object-fit:contain}.drawing-feature .drawing-open img{height:clamp(420px,65vw,930px)}
+.drawing figcaption{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:14px 2px 0;border-top:1px solid var(--red);margin-top:12px;color:var(--ink)}
+.drawing figcaption span{font:800 1rem 'Barlow Condensed',sans-serif;text-transform:uppercase}.drawing figcaption strong{font-family:Fraunces,Georgia,serif;font-size:clamp(1rem,1.6vw,1.45rem);text-align:right}
+.drawing-lightbox{border:0;border-radius:12px;background:#fffbea;color:var(--red);padding:55px 20px 18px;max-width:min(96vw,1100px);max-height:96vh;text-align:center;box-shadow:0 25px 80px #1b0c0c80}.drawing-lightbox::backdrop{background:#1e1018e6}.drawing-lightbox img{display:block;max-width:100%;max-height:calc(96vh - 125px);width:auto;height:auto;object-fit:contain;margin:auto}.drawing-lightbox p{margin:12px 0 0;font-family:Fraunces,Georgia,serif;font-weight:700}.drawing-close{position:absolute;right:14px;top:12px;border:0;background:transparent;color:inherit;font:800 1.1rem 'Barlow Condensed',sans-serif;text-transform:uppercase;cursor:pointer}
+@media(max-width:700px){.drawings-intro h1{font-size:clamp(3.5rem,13vw,6rem);margin:25px 0 36px}.drawings-intro-bottom{font-size:1.1rem}.drawings-gallery{display:block;padding:24px 16px 70px}.drawing,.drawing-feature+.drawing,.drawing-wide+.drawing,.drawing:nth-child(3),.drawing:nth-child(7),.drawing:nth-child(9){margin:0 0 38px}.drawing-open{padding:18px;border-radius:16px}.drawing-open img,.drawing-feature .drawing-open img{height:auto;max-height:75vh;object-fit:contain}.drawing figcaption{align-items:start}}
+@media(prefers-reduced-motion:reduce){.drawing-open{transition:none}}
+.drawings-section{background:var(--cream)}
+.drawings-section-digital{background:#f9e5ef}
+.drawings-section-heading{padding:clamp(50px,7vw,100px) clamp(20px,5vw,80px) 0}
+.drawings-section-heading h2{font:900 clamp(3.2rem,8vw,8rem)/1 Fraunces,Georgia,serif;letter-spacing:-.07em;text-transform:uppercase;margin:14px 0 0;overflow-wrap:anywhere}
+.drawings-section-digital .drawings-gallery{background:#f9e5ef}
+.drawings-intro h1{font-size:clamp(3.5rem,9vw,10rem)}
+@media(max-width:700px){.drawings-section-heading{padding:52px 20px 0}.drawings-section-heading h2{font-size:clamp(2.6rem,11vw,5rem)}.drawings-intro h1{font-size:clamp(2.6rem,10vw,5rem)}}
