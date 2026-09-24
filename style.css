@@ -237,7 +237,9 @@ body.dogga-page{--red:#75452f;--pink:#d7b2e6;--cream:#faf5ed;--blush:#f2e8f3;--i
 .category p{display:flex;align-items:end;justify-content:space-between;gap:15px;flex-wrap:wrap}
 .category-action{display:inline-flex;align-items:center;justify-content:center;padding:9px 15px;border:1.5px solid currentColor;border-radius:100px;font:800 1rem "Barlow Condensed",sans-serif;white-space:nowrap;transition:background .2s,color .2s}
 .category:hover .category-action,.category:focus-visible .category-action{background:var(--red);color:var(--cream)}
+.category-logos{overflow:hidden}.category-logos h3{margin-bottom:0}.category-logo-preview{height:145px;display:flex;align-items:center;justify-content:center;gap:0;padding:0 8px;pointer-events:none}.preview-logo{width:55%;height:105px;display:flex;align-items:center;justify-content:center;padding:15px;border-radius:15px;box-shadow:0 8px 20px #5c183024}.preview-logo img{max-width:100%;max-height:100%;object-fit:contain}.preview-red-lemon{background:#f7c7d5;transform:rotate(-8deg) translateX(13px)}.preview-dogga{background:#d6c1f1;transform:rotate(7deg) translateX(-13px);margin-left:-8px}.category-logos:hover .preview-red-lemon{transform:rotate(-11deg) translateX(8px)}.category-logos:hover .preview-dogga{transform:rotate(10deg) translateX(-8px)}.preview-logo{transition:transform .2s}
 @media(max-width:650px){.category-action{font-size:.95rem}}
+@media(max-width:650px){.category-logos{min-height:330px}.category-logo-preview{height:120px}.preview-logo{height:92px;padding:12px}}
 /* Páginas de categorías aún sin una galería de proyectos. */
 .portfolio-subpage{background:var(--cream)}
 .portfolio-hero{padding:clamp(65px,9vw,125px) clamp(20px,7vw,120px);background:var(--pink)}
@@ -553,3 +555,20 @@ body.dogga-page{--red:#75452f;--pink:#d7b2e6;--cream:#faf5ed;--blush:#f2e8f3;--i
 .logo-index .logo-index-card.logo-index-art-vibes .logo-index-mark{height:255px;max-height:255px;width:auto;max-width:100%;filter:none;object-fit:contain}
 .art-vibes-page .blue-sky-logo-stage{background:#fff;border:0}
 .art-vibes-page .blue-sky-logo-stage img{width:min(100%,650px);max-height:85vh;object-fit:contain;filter:none}
+
+/* Trabajos visibles desde las categorías de la home. */
+.category-logos,.category-with-preview{min-height:470px;overflow:hidden}
+.category-preview{height:155px;display:flex;align-items:center;justify-content:center;gap:0;pointer-events:none;margin:8px 0 22px}
+.category-preview .preview-tile{display:block;width:46%;height:145px;overflow:hidden;border:5px solid var(--cream);border-radius:16px;background:var(--cream);box-shadow:0 9px 22px #572e3330;transform:rotate(-7deg) translateX(10px);transition:transform .35s ease}
+.category-preview .preview-tile+ .preview-tile{transform:rotate(7deg) translateX(-10px);margin-left:-12px}
+.category-preview img{display:block;width:100%;height:100%;object-fit:cover}
+.category:hover .preview-tile:first-child,.category:focus-visible .preview-tile:first-child{transform:rotate(-11deg) translate(-5px,-6px)}
+.category:hover .preview-tile:nth-child(2),.category:focus-visible .preview-tile:nth-child(2){transform:rotate(11deg) translate(5px,-6px)}
+.category-preview-art .preview-tile{width:min(78%,330px);height:120px;background:#fff;border-color:#fff;transform:rotate(-5deg);display:grid;place-items:center;padding:20px}
+.category-preview-art img{object-fit:contain}
+.category-logos .category-logo-preview{margin:8px 0 20px}
+.category-logo-preview img,.category-preview img{animation:preview-float 4s ease-in-out infinite}
+.category-logo-preview>*:nth-child(2) img,.category-preview .preview-tile:nth-child(2) img{animation-delay:-2s}
+@keyframes preview-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+@media(max-width:650px){.category-logos,.category-with-preview{min-height:360px}.category-preview{height:120px;margin:5px 0 15px}.category-preview .preview-tile{height:115px}.category-preview-art .preview-tile{height:100px}}
+@media(prefers-reduced-motion:reduce){.category-preview .preview-tile,.preview-logo{transition:none}.category-logo-preview img,.category-preview img{animation:none}}
