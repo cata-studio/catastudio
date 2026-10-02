@@ -10,74 +10,53 @@
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=DM+Sans:wght@400;500;600;700&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css?v=66">
 <style>
-/* Art-book gallery inspired by the supplied editorial reference. */
-.drawings-page{background:#d8cfcc;color:#171717;--red:#171717;--ink:#171717;--cream:#fff}
-.drawings-page .site-header{background:#fff;color:#171717;border:0}
-.drawings-page .site-header a{color:inherit}
-.drawings-page main{max-width:1500px;margin:auto;padding:40px clamp(18px,4vw,64px) 70px}
-.drawings-page .drawings-intro{background:#fff;padding:clamp(28px,5vw,72px);position:relative}
-.drawings-page .drawings-intro .eyebrow{font:600 11px/1.5 'DM Sans',sans-serif;letter-spacing:.12em}
-.drawings-page .drawings-intro h1{font:700 clamp(44px,7.4vw,112px)/.95 'DM Sans',sans-serif;letter-spacing:-.075em;text-transform:uppercase;margin:40px 0}
-.drawings-page .drawings-intro h1 .illustrated-spark{display:none}
-.drawings-page .drawings-intro-bottom{border:0;padding:0;font:500 12px/1.5 'DM Sans',sans-serif;letter-spacing:.04em}
-.drawings-page .drawings-intro-bottom span{font-weight:700}
-.drawings-page .art-index{display:flex;gap:28px;margin-top:30px;flex-wrap:wrap}
-.drawings-page .art-index a{font:600 12px/1.5 'DM Sans',sans-serif;text-transform:uppercase;text-decoration:none;color:#171717;border-bottom:1px solid #171717;padding-bottom:5px}
-.drawings-page .drawings-section{background:#fff;margin-top:44px;padding:clamp(24px,4vw,60px);scroll-margin-top:30px}
-.drawings-page .drawings-section-heading{padding:0;display:grid;grid-template-columns:120px 1fr;column-gap:24px;align-items:end;margin-bottom:38px}
-.drawings-page .drawings-section-heading .eyebrow{grid-column:1;margin:0;font:700 clamp(44px,5vw,72px)/1 'DM Sans',sans-serif;letter-spacing:-.07em}
-.drawings-page .drawings-section-heading h2{grid-column:2;margin:0;font:700 clamp(28px,4vw,58px)/1 'DM Sans',sans-serif;letter-spacing:-.055em;text-transform:uppercase;overflow-wrap:normal}
-.drawings-page .drawings-gallery{background:#fff;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:44px 30px;padding:0;align-items:start}
-.drawings-page .drawing,.drawings-page .drawing-feature,.drawings-page .drawing-wide,.drawings-page .drawing:nth-child(n){grid-column:span 1;margin:0;min-width:0}
-.drawings-page .drawing-open,.drawings-page .drawing-dark .drawing-open,.drawings-page .drawing-blue .drawing-open,.drawings-page .drawing-feature .drawing-open,.drawings-page .drawing-wide .drawing-open{background:transparent;padding:0;border-radius:0;overflow:visible;box-shadow:none;transition:opacity .2s}
-.drawings-page .drawing-open:hover{transform:none;box-shadow:none;opacity:.88}
-.drawings-page .drawing-open:focus-visible{outline:2px solid #171717;outline-offset:6px;transform:none;box-shadow:none}
-.drawings-page .drawing-open img,.drawings-page .drawing-feature .drawing-open img{width:100%;height:clamp(230px,29vw,420px);object-fit:contain;object-position:center bottom;border-radius:0}
-.drawings-page .drawing figcaption{border:0;display:block;padding:0;margin-top:14px;color:#171717}
-.drawings-page .drawing figcaption span{display:block;font:500 10px/1.5 'DM Sans',sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#666}
-.drawings-page .drawing figcaption strong{display:block;text-align:left;font:700 clamp(14px,1.5vw,20px)/1.25 'DM Sans',sans-serif;letter-spacing:-.035em;margin-top:4px}
-.drawings-page .drawing:first-child{grid-column:span 2;display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);align-items:center;gap:24px}
-.drawings-page .drawing:first-child .drawing-open img{height:clamp(280px,34vw,490px);object-position:center}
-.drawings-page .drawing:first-child figcaption{margin:0}
-.drawings-page .drawing:first-child figcaption strong{font-size:clamp(24px,3vw,42px);line-height:1.05;text-transform:uppercase;letter-spacing:-.055em}
-.drawings-page .drawing:first-child figcaption span{margin-bottom:12px}
-.drawings-page .drawings-section::after{content:"ANA CATARINA VON PAPEN / SELECCIÓN DE OBRAS";display:block;margin-top:44px;font:500 9px/1.5 'DM Sans',sans-serif;letter-spacing:.07em}
-.drawings-page .drawing-lightbox{background:#fff;color:#171717;border-radius:0}
-.drawings-page .drawing-lightbox p,.drawings-page .drawing-close{font-family:'DM Sans',sans-serif}
-.drawings-page footer{background:#fff;color:#171717}
-.drawings-page footer a{color:inherit}
-@media(max-width:900px){
-.drawings-page .drawings-gallery{gap:32px 20px}
-.drawings-page .drawings-section-heading{grid-template-columns:88px 1fr}
-.drawings-page .drawing:first-child{gap:16px}
-}
-@media(max-width:650px){
-.drawings-page main{padding:20px 14px 40px}
-.drawings-page .drawings-intro{padding:28px 22px}
-.drawings-page .drawings-intro h1{font-size:clamp(35px,10vw,62px);margin:32px 0}
-.drawings-page .drawings-intro-bottom{font-size:10px;align-items:start}
-.drawings-page .art-index{gap:20px}
-.drawings-page .art-index a{font-size:10px}
-.drawings-page .drawings-section{margin-top:22px;padding:26px 20px}
-.drawings-page .drawings-section-heading{grid-template-columns:62px 1fr;gap:14px;margin-bottom:28px}
-.drawings-page .drawings-section-heading .eyebrow{font-size:42px}
-.drawings-page .drawings-section-heading h2{font-size:clamp(22px,6vw,34px)}
-.drawings-page .drawings-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 18px}
-.drawings-page .drawing:first-child{grid-column:1/-1;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:18px}
-.drawings-page .drawing-open img,.drawings-page .drawing-feature .drawing-open img{height:clamp(150px,39vw,240px);max-height:none}
-.drawings-page .drawing:first-child .drawing-open img{height:clamp(230px,65vw,360px)}
-.drawings-page .drawing:first-child figcaption strong{font-size:clamp(20px,5.5vw,30px)}
-.drawings-page .drawing figcaption strong{font-size:14px}
-.drawings-page .drawing figcaption span{font-size:8px}
+
+/* Each work occupies its own full-width section within the portfolio's palette. */
+.drawings-page .art-index{display:flex;flex-wrap:wrap;gap:26px;margin-top:24px;font:800 1rem 'Barlow Condensed',sans-serif;text-transform:uppercase}
+.drawings-page .art-index a{border-bottom:1px solid currentColor;padding-bottom:4px}
+.drawings-page .drawings-section-heading{padding-bottom:clamp(35px,5vw,65px)}
+.drawings-page .drawings-gallery,.drawings-page .drawings-section-digital .drawings-gallery{display:block;padding:0;background:transparent}
+.drawings-page .drawing,.drawings-page .drawing:nth-child(n),.drawings-page .drawing-feature+.drawing,.drawings-page .drawing-wide+.drawing{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);align-items:center;gap:clamp(28px,6vw,100px);margin:0;padding:clamp(45px,7vw,100px) clamp(22px,7vw,120px);background:var(--work-bg,var(--cream));color:var(--work-ink,var(--red));min-width:0}
+.drawings-page .drawing-open,.drawings-page .drawing-feature .drawing-open,.drawings-page .drawing-dark .drawing-open,.drawings-page .drawing-blue .drawing-open,.drawings-page .drawing-wide .drawing-open{grid-column:1;grid-row:1;background:transparent;padding:0;border:0;border-radius:0;box-shadow:none;overflow:visible;transform:none;transition:opacity .2s}
+.drawings-page .drawing-open:hover{opacity:.9;transform:none;box-shadow:none}
+.drawings-page .drawing-open:focus-visible{outline:2px solid currentColor;outline-offset:8px;transform:none;box-shadow:none}
+.drawings-page .drawing-open img,.drawings-page .drawing-feature .drawing-open img{display:block;width:100%;height:auto;max-height:82vh;max-height:82svh;object-fit:contain;margin:auto;border-radius:0}
+.drawings-page .drawing figcaption{grid-column:2;grid-row:1;display:block;border:0;margin:0;padding:0;color:inherit}
+.drawings-page .drawing figcaption span{display:block;font:800 1.15rem 'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:.04em;margin-bottom:20px}
+.drawings-page .drawing figcaption strong{display:block;font:900 clamp(2.5rem,5vw,5.4rem)/1.03 Fraunces,Georgia,serif;letter-spacing:-.055em;text-align:left;overflow-wrap:anywhere}
+.drawings-page .drawing:nth-child(even){grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr)}
+.drawings-page .drawing:nth-child(even) .drawing-open{grid-column:2}
+.drawings-page .drawing:nth-child(even) figcaption{grid-column:1}
+.drawings-page .drawing:has(img[src$="portrait-01.jpeg"]){--work-bg:#f5d4c5;--work-ink:#a53634}
+.drawings-page .drawing:has(img[src$="cat.jpeg"]){--work-bg:#eee0ef;--work-ink:#913f78}
+.drawings-page .drawing:has(img[src$="architecture-01.jpeg"]){--work-bg:#e1eadb;--work-ink:#304b61}
+.drawings-page .drawing:has(img[src$="birds.jpeg"]){--work-bg:#ffe1e9;--work-ink:#ad386b}
+.drawings-page .drawing:has(img[src$="portrait-03.jpeg"]){--work-bg:#f6e6ce;--work-ink:#a63b3b}
+.drawings-page .drawing:has(img[src$="portrait-04.jpeg"]){--work-bg:#f5dce2;--work-ink:#9d353f}
+.drawings-page .drawing:has(img[src$="portrait-05.jpeg"]){--work-bg:#e8e6df;--work-ink:#413c3a}
+.drawings-page .drawing:has(img[src$="architecture-02.jpeg"]){--work-bg:#ffead3;--work-ink:#8c4438}
+.drawings-page .drawing:has(img[src$="vitiligo.jpeg"]){--work-bg:#ffc6dd;--work-ink:#a72e66}
+.drawings-page .drawing:has(img[src$="noise.jpeg"]){--work-bg:#301c31;--work-ink:#ffb6c6}
+.drawings-page .drawing:has(img[src$="final-mouse.jpeg"]){--work-bg:#f9d9e5;--work-ink:#913f68}
+.drawings-page .drawing:has(img[src$="balloons.jpeg"]){--work-bg:#cceaf0;--work-ink:#854d88}
+.drawings-page .drawing:has(img[src$="roar.jpeg"]){--work-bg:#e4d5f5;--work-ink:#5c347f}
+@media(max-width:700px){
+.drawings-page .drawing,.drawings-page .drawing:nth-child(n){display:flex;flex-direction:column;align-items:stretch;gap:28px;padding:42px 24px 52px;margin:0}
+.drawings-page .drawing figcaption{order:-1}
+.drawings-page .drawing figcaption span{font-size:1rem;margin-bottom:10px}
+.drawings-page .drawing figcaption strong{font-size:clamp(2.3rem,9vw,4rem)}
+.drawings-page .drawing-open img,.drawings-page .drawing-feature .drawing-open img{width:100%;height:auto;max-height:75vh;max-height:75svh}
+.drawings-page .drawings-section-heading{padding-bottom:35px}
 }
 @media(prefers-reduced-motion:reduce){.drawings-page .drawing-open{transition:none}}
+
 </style>
 </head>
 <body class="portfolio-subpage drawings-page" data-accent="pink">
   <header class="site-header" id="inicio"><a class="wordmark" href="index.html" aria-label="Volver al portfolio de Ana Catarina von Papen">Ana Catarina<br><span>von</span> <span>Papen</span></a><nav aria-label="Navegación de Dibujos"><a href="index.html#trabajo"><span class="illustrated-arrow arrow-left" aria-hidden="true"></span> Portfolio</a><a href="index.html#contacto">Contacto</a></nav></header>
   <main>
-    <section class="drawings-intro" aria-labelledby="page-title"><p class="eyebrow">Portfolio / 02 · Selección de obras</p><h1 id="page-title">Dibujos e<br>ilustración<span class="illustrated-spark" aria-hidden="true"></span></h1><div class="drawings-intro-bottom"><p>Entre el papel y la pantalla.</p><span>14 obras</span></div><nav class="art-index" aria-label="Galerías"><a href="#sobre-papel">01 / Sobre papel</a><a href="#ilustraciones">02 / En pantalla</a></nav></section>
-    <section class="drawings-section" id="sobre-papel" aria-labelledby="drawings-title"><div class="drawings-section-heading"><p class="eyebrow" aria-label="01 / Sobre papel">01/</p><h2 id="drawings-title">Dibujos</h2></div><div class="drawings-gallery">
+    <section class="drawings-intro" aria-labelledby="page-title"><p class="eyebrow">Portfolio / 02 · Selección de obras</p><h1 id="page-title">Dibujos e<br>ilustración<span class="illustrated-spark" aria-hidden="true"></span></h1><div class="drawings-intro-bottom"><p>Entre el papel y la pantalla.</p><span>13 obras</span></div><nav class="art-index" aria-label="Galerías"><a href="#sobre-papel">01 / Sobre papel</a><a href="#ilustraciones">02 / En pantalla</a></nav></section>
+    <section class="drawings-section" id="sobre-papel" aria-labelledby="drawings-title"><div class="drawings-section-heading"><p class="eyebrow">01 / Sobre papel</p><h2 id="drawings-title">Dibujos</h2></div><div class="drawings-gallery">
       <figure class="drawing drawing-paper"><button type="button" class="drawing-open" aria-label="Ampliar retrato en sanguina"><img src="assets/drawings/portrait-01.jpeg" alt="Retrato a lápiz rojo de un hombre sobre papel crema" width="1956" height="2739" loading="lazy"></button><figcaption><span>Dibujo</span><strong>Retrato en sanguina</strong></figcaption></figure>
       <figure class="drawing"><button type="button" class="drawing-open" aria-label="Ampliar Gato esfinge"><img src="assets/drawings/cat.jpeg" alt="Dibujo de un gato esfinge en lápiz rosa dentro de un cuaderno" width="1152" height="1536" loading="lazy"></button><figcaption><span>Dibujo</span><strong>Gato esfinge</strong></figcaption></figure>
       <figure class="drawing drawing-wide"><button type="button" class="drawing-open" aria-label="Ampliar arquitectura en tinta"><img src="assets/drawings/architecture-01.jpeg" alt="Dibujo a tinta azul de un edificio de varios pisos frente a las montañas" width="1152" height="1536" loading="lazy"></button><figcaption><span>Dibujo</span><strong>Arquitectura en tinta</strong></figcaption></figure>
@@ -86,9 +65,8 @@
       <figure class="drawing drawing-paper"><button type="button" class="drawing-open" aria-label="Ampliar estudio de retrato"><img src="assets/drawings/portrait-04.jpeg" alt="Retrato de una persona a lápiz rojo sobre papel" width="1152" height="1536" loading="lazy"></button><figcaption><span>Dibujo</span><strong>Estudio de retrato</strong></figcaption></figure>
       <figure class="drawing"><button type="button" class="drawing-open" aria-label="Ampliar Retrato a tinta"><img src="assets/drawings/portrait-05.jpeg" alt="Retrato de un hombre con gafas trazado a bolígrafo negro" width="1152" height="1536" loading="lazy"></button><figcaption><span>Dibujo</span><strong>Retrato a tinta</strong></figcaption></figure>
       <figure class="drawing drawing-paper"><button type="button" class="drawing-open" aria-label="Ampliar casa imaginada"><img src="assets/drawings/architecture-02.jpeg" alt="Ilustración colorida de una casa fantástica dibujada sobre papel" width="864" height="1536" loading="lazy"></button><figcaption><span>Dibujo</span><strong>Casa imaginada</strong></figcaption></figure>
-      <figure class="drawing drawing-dark"><button type="button" class="drawing-open" aria-label="Ampliar serpiente"><img src="assets/drawings/snake.jpeg" alt="Ilustración de una serpiente dorada y hojas sobre papel negro, mostrada en una fotografía" width="750" height="1334" loading="lazy"></button><figcaption><span>Dibujo</span><strong>Serpiente</strong></figcaption></figure>
     </div></section>
-    <section class="drawings-section drawings-section-digital" id="ilustraciones" aria-labelledby="digital-title"><div class="drawings-section-heading"><p class="eyebrow" aria-label="02 / En pantalla">02/</p><h2 id="digital-title">Ilustración digital</h2></div><div class="drawings-gallery">
+    <section class="drawings-section drawings-section-digital" id="ilustraciones" aria-labelledby="digital-title"><div class="drawings-section-heading"><p class="eyebrow">02 / En pantalla</p><h2 id="digital-title">Ilustración digital</h2></div><div class="drawings-gallery">
       <figure class="drawing drawing-feature"><button type="button" class="drawing-open" aria-label="Ampliar Vitíligo"><img src="assets/drawings/vitiligo.jpeg" alt="Ilustración digital rosa de una chica rodeada de ojos y formas orgánicas" width="864" height="1536"></button><figcaption><span>Ilustración digital</span><strong>Vitíligo</strong></figcaption></figure>
       <figure class="drawing drawing-dark"><button type="button" class="drawing-open" aria-label="Ampliar Noise"><img src="assets/drawings/noise.jpeg" alt="Ilustración digital roja de una mujer sobre un fondo oscuro con formas luminosas" width="1080" height="1350" loading="lazy"></button><figcaption><span>Ilustración digital</span><strong>Noise</strong></figcaption></figure>
       <figure class="drawing"><button type="button" class="drawing-open" aria-label="Ampliar Final Mouse"><img src="assets/drawings/final-mouse.jpeg" alt="Ilustración digital de una mujer ante un cielo rosado con destellos dorados" width="1080" height="1350" loading="lazy"></button><figcaption><span>Ilustración digital</span><strong>Final Mouse</strong></figcaption></figure>
