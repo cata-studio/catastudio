@@ -30,7 +30,6 @@
 
 
 
-.drawings-page .drawing:has(img[src$="vitiligo.jpeg"]){--work-bg:#fc6061;--work-ink:#ffffff}
 .drawings-page .drawing:has(img[src$="noise.jpeg"]){--work-bg:#280001;--work-ink:#ff969e}
 .drawings-page .drawing:has(img[src$="final-mouse.jpeg"]){--work-bg:#480f22;--work-ink:#fffbdc}
 
@@ -72,16 +71,29 @@
 @media(max-width:900px){.cats-posters{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:500px){.cats-heading{padding:48px 24px}.cats-heading h2{font-size:4.5rem}.cats-posters{grid-template-columns:1fr}}
 
+
+.portrait-pair{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);background:#280001;color:#ff969e;align-items:stretch}
+.portrait-images{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0}
+.portrait-work{margin:0;position:relative;min-width:0}
+.drawings-page .portrait-work .drawing-open{display:block;width:100%;padding:0;background:transparent;border:0;line-height:0}
+.drawings-page .portrait-work .drawing-open img{width:100%;height:auto;max-height:none;display:block;margin:0}
+.portrait-name{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.portrait-caption{align-self:center;padding:clamp(24px,4vw,64px)}
+.portrait-caption .eyebrow{font-size:1rem;margin-bottom:24px}
+.portrait-caption h2{font:900 clamp(2rem,4vw,4.8rem)/1.05 Fraunces,Georgia,serif;letter-spacing:-.055em;margin:0;overflow-wrap:anywhere}
+.portrait-caption h2 span{display:inline-block;margin-top:24px}
+@media(max-width:700px){.portrait-pair{display:flex;flex-direction:column}.portrait-caption{align-self:stretch;padding:36px 24px}.portrait-caption h2{font-size:clamp(2.3rem,8vw,3.6rem)}.portrait-images{width:100%;grid-template-columns:repeat(2,minmax(0,1fr))}}
+
 </style>
 </head>
 <body class="portfolio-subpage drawings-page" data-accent="pink">
   <header class="site-header" id="inicio"><a class="wordmark" href="index.html" aria-label="Volver al portfolio de Ana Catarina von Papen">Ana Catarina<br><span>von</span> <span>Papen</span></a><nav aria-label="Navegación de Ilustración digital"><a href="index.html#trabajo"><span class="illustrated-arrow arrow-left" aria-hidden="true"></span> Portfolio</a><a href="index.html#contacto">Contacto</a></nav></header>
   <main>
-    <section class="drawings-intro" aria-labelledby="page-title"><p class="eyebrow">Portfolio / 02 · Selección de obras</p><h1 id="page-title">Ilustración<br>digital<span class="illustrated-spark" aria-hidden="true"></span></h1><div class="drawings-intro-bottom"><p>Arte creado en pantalla.</p><span>4 obras + colección Gatos</span></div></section>
+    <section class="drawings-intro" aria-labelledby="page-title"><p class="eyebrow">Portfolio / 02 · Selección de obras</p><h1 id="page-title">Ilustración<br>digital<span class="illustrated-spark" aria-hidden="true"></span></h1><div class="drawings-intro-bottom"><p>Arte creado en pantalla.</p><span>3 obras + colección Gatos</span></div></section>
     <section class="drawings-section drawings-section-digital" id="ilustraciones" aria-labelledby="page-title"><div class="drawings-gallery">
-      <figure class="drawing drawing-feature"><button type="button" class="drawing-open" aria-label="Ampliar Vitíligo"><img src="assets/drawings/vitiligo.jpeg" alt="Ilustración digital rosa de una chica rodeada de ojos y formas orgánicas" width="864" height="1536"></button><figcaption><span>Ilustración digital</span><strong>Vitíligo</strong></figcaption></figure>
-      <figure class="drawing drawing-dark"><button type="button" class="drawing-open" aria-label="Ampliar Noise"><img src="assets/drawings/noise.jpeg" alt="Ilustración digital roja de una mujer sobre un fondo oscuro con formas luminosas" width="1080" height="1350" loading="lazy"></button><figcaption><span>Ilustración digital</span><strong>Noise</strong></figcaption></figure>
-      <figure class="drawing"><button type="button" class="drawing-open" aria-label="Ampliar Final Mouse"><img src="assets/drawings/final-mouse.jpeg" alt="Ilustración digital de una mujer ante un cielo rosado con destellos dorados" width="1080" height="1350" loading="lazy"></button><figcaption><span>Ilustración digital</span><strong>Final Mouse</strong></figcaption></figure>
+      
+      <section class="portrait-pair" aria-labelledby="portraits-title"><div class="portrait-images"><figure class="portrait-work"><button type="button" class="drawing-open" aria-label="Ampliar Noise"><img src="assets/drawings/noise.jpeg" alt="Ilustración digital roja de una mujer sobre un fondo oscuro con formas luminosas" width="1080" height="1350" loading="lazy"></button><figcaption class="portrait-name"><strong>Noise</strong></figcaption></figure><figure class="portrait-work"><button type="button" class="drawing-open" aria-label="Ampliar Final Mouse"><img src="assets/drawings/final-mouse.jpeg" alt="Ilustración digital de una mujer ante un cielo rosado con destellos dorados" width="1080" height="1350" loading="lazy"></button><figcaption class="portrait-name"><strong>Final Mouse</strong></figcaption></figure></div><div class="portrait-caption"><p class="eyebrow">Ilustración digital / Retratos</p><h2 id="portraits-title">Noise<br><span>Final Mouse</span></h2></div></section>
+      
       <figure class="drawing"><button type="button" class="drawing-open" aria-label="Ampliar Roar"><img src="assets/drawings/roar.jpeg" alt="Ilustración gráfica de un tigre violeta y amarillo con boca abierta" width="1132" height="1536" loading="lazy"></button><figcaption><span>Ilustración digital</span><strong>Roar</strong></figcaption></figure>
     </div></section>
   <section class="cats-collection" id="gatos" aria-labelledby="cats-title"><div class="cats-heading"><p class="eyebrow">Colección / Retratos felinos</p><h2 id="cats-title">Gatos<span class="illustrated-spark" aria-hidden="true"></span></h2><p class="cats-intro">Siete láminas, distintas personalidades. Retratos llenos de color, formas y miradas.</p></div><div class="cats-posters"><figure class="cat-poster"><button class="cat-open" type="button" aria-label="Ampliar retrato felino 1"><img src="assets/cats/cat-01.webp" alt="Gato naranja sobre un fondo de cuadros azules y crema" width="1248" height="1741" loading="lazy"></button><figcaption class="cat-name"><strong>Retrato felino 01</strong></figcaption></figure>
