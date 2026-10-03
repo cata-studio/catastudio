@@ -647,7 +647,7 @@ body.dogga-page{--red:#75452f;--pink:#d7b2e6;--cream:#faf5ed;--blush:#f2e8f3;--i
 .category-art h3{margin-bottom:0}
 .category-art .category-logo-preview{height:clamp(170px,22vw,260px);padding:12px 0;margin:12px 0 28px}
 .category-art .preview-logo{width:43%;max-width:230px;height:auto;aspect-ratio:1/1;flex:none;overflow:hidden;padding:0}
-.category-art .preview-logo img{display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain;animation:none}
+.category-art .preview-logo img{display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:cover;object-position:center;animation:none;transform:scale(1);transition:transform .45s ease}
 .category-art .preview-roar{background:#330d94;transform:rotate(-8deg) translateX(13px)}
 .category-art .preview-self-portrait{background:#280001;transform:rotate(7deg) translateX(-13px);margin-left:-8px}
 .category-art:hover .preview-roar,.category-art:focus-visible .preview-roar{transform:rotate(-11deg) translateX(8px)}
@@ -655,7 +655,11 @@ body.dogga-page{--red:#75452f;--pink:#d7b2e6;--cream:#faf5ed;--blush:#f2e8f3;--i
 @media(max-width:650px){.category-art .category-logo-preview{height:clamp(160px,39vw,240px)}}
 
 /* Move the complete artwork cards without moving or cropping their images. */
-.category-art .preview-logo{animation:art-card-float 4s ease-in-out infinite}
+.category-art .preview-logo{animation:none}
 .category-art .preview-self-portrait{animation-delay:-2s}
 @keyframes art-card-float{0%,100%{translate:0 0}50%{translate:0 -6px}}
 @media(prefers-reduced-motion:reduce){.category-art .preview-logo{animation:none}}
+
+/* Zoom within filled square artwork previews. */
+.category-art:hover .preview-logo img,.category-art:focus-visible .preview-logo img{transform:scale(1.08)}
+@media(prefers-reduced-motion:reduce){.category-art .preview-logo img{transition:none}}
