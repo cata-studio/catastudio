@@ -642,3 +642,14 @@ body.dogga-page{--red:#75452f;--pink:#d7b2e6;--cream:#faf5ed;--blush:#f2e8f3;--i
 .category-logos .preview-dogga{background:#ffbfd1}
 .category-logos .preview-dogga-pink{width:145%;max-width:145%;height:auto;max-height:none;object-fit:contain}
 @media(max-width:650px){.category-logos .category-logo-preview{height:clamp(160px,39vw,240px)}.category-logos .preview-logo{padding:10px}}
+
+/* Square artwork previews alongside the homepage logo previews. */
+.category-art h3{margin-bottom:0}
+.category-art .category-logo-preview{height:clamp(170px,22vw,260px);padding:12px 0;margin:12px 0 28px}
+.category-art .preview-logo{width:43%;max-width:230px;height:auto;aspect-ratio:1/1;flex:none;overflow:hidden;padding:0}
+.category-art .preview-logo img{display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:cover}
+.category-art .preview-roar{background:#330d94;transform:rotate(-8deg) translateX(13px)}
+.category-art .preview-self-portrait{background:#280001;transform:rotate(7deg) translateX(-13px);margin-left:-8px}
+.category-art:hover .preview-roar,.category-art:focus-visible .preview-roar{transform:rotate(-11deg) translateX(8px)}
+.category-art:hover .preview-self-portrait,.category-art:focus-visible .preview-self-portrait{transform:rotate(10deg) translateX(-8px)}
+@media(max-width:650px){.category-art .category-logo-preview{height:clamp(160px,39vw,240px)}}
