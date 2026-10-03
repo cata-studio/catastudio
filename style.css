@@ -617,9 +617,9 @@ body.dogga-page{--red:#75452f;--pink:#d7b2e6;--cream:#faf5ed;--blush:#f2e8f3;--i
 @media(max-width:700px){.drawings-section-heading{padding:52px 20px 0}.drawings-section-heading h2{font-size:clamp(2.6rem,11vw,5rem)}.drawings-intro h1{font-size:clamp(2.6rem,10vw,5rem)}}
 
 /* Billy Land */
-.logo-index .logo-index-card.logo-index-billy-land{background:#7e174a}
+.logo-index .logo-index-card.logo-index-billy-land{background:#470b2b}
 .logo-index .logo-index-card.logo-index-billy-land .logo-index-mark{width:100%;max-width:100%;height:auto;max-height:260px;filter:none;object-fit:contain}
-.billy-land-page .blue-sky-logo-stage{background:#7e174a;border:0}
+.billy-land-page .blue-sky-logo-stage{background:#470b2b;border:0}
 .billy-land-page .blue-sky-logo-stage img{filter:none;width:min(100%,920px)}
 
 .logo-index .logo-index-card.logo-index-billy-land{padding:12px}
