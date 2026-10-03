@@ -635,3 +635,10 @@ body.dogga-page{--red:#75452f;--pink:#d7b2e6;--cream:#faf5ed;--blush:#f2e8f3;--i
 .logo-index .logo-index-card.logo-index-gente-commotus{background:#A4FF93}
 .logo-index .logo-index-card.logo-index-dogga{background:#ffbfd1;overflow:hidden}
 .logo-index .logo-index-card.logo-index-dogga .dogga-pink-version{width:145%;max-width:none;height:auto;max-height:none;filter:none;object-fit:contain;flex:none}
+
+/* Square logo previews on the homepage. */
+.category-logos .category-logo-preview{height:clamp(170px,22vw,260px);padding:12px 0;margin:12px 0 28px}
+.category-logos .preview-logo{width:43%;max-width:230px;height:auto;aspect-ratio:1/1;flex:none;overflow:hidden;padding:15px}
+.category-logos .preview-dogga{background:#ffbfd1}
+.category-logos .preview-dogga-pink{width:145%;max-width:145%;height:auto;max-height:none;object-fit:contain}
+@media(max-width:650px){.category-logos .category-logo-preview{height:clamp(160px,39vw,240px)}.category-logos .preview-logo{padding:10px}}
