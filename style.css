@@ -621,3 +621,6 @@ body.dogga-page{--red:#75452f;--pink:#d7b2e6;--cream:#faf5ed;--blush:#f2e8f3;--i
 .logo-index .logo-index-card.logo-index-billy-land .logo-index-mark{width:100%;max-width:100%;height:auto;max-height:260px;filter:none;object-fit:contain}
 .billy-land-page .blue-sky-logo-stage{background:#7e174a;border:0}
 .billy-land-page .blue-sky-logo-stage img{filter:none;width:min(100%,920px)}
+
+.logo-index .logo-index-card.logo-index-billy-land{padding:12px}
+.logo-index .logo-index-card.logo-index-billy-land .logo-index-mark{width:100%;max-width:100%;max-height:none;transform:scale(1.22)}
